@@ -24,12 +24,12 @@ public class AppUser {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         AppUser appUser = (AppUser) o;
-        return Objects.equals(getUsername(), appUser.getUsername()) && Objects.equals(getPassword(), appUser.getPassword()) && getRole() == appUser.getRole();
+        return Objects.equals(getUsername(), appUser.getUsername()) && getRole() == appUser.getRole();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getUsername(), getPassword(), getRole());
+        return Objects.hash(getUsername(), getRole());
     }
 
 
