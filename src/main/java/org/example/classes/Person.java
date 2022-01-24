@@ -38,7 +38,11 @@ public class Person {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        if (email == null) {
+            throw new RuntimeException("Email can't be null");
+        }
+            this.email = email;
+
     }
 
     public int getId() {

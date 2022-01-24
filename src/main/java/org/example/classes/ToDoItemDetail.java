@@ -12,12 +12,13 @@ public class ToDoItemDetail {
     private boolean done;
     private Person creator;
 
-    // Constructor
+    // Constructors
     public ToDoItemDetail(int id, String title, LocalDate deadline){
         this.setId(id);
         this.setTitle(title);
         this.setDeadline(deadline);
     }
+    public ToDoItemDetail(){}
 
     //Setters Getters
     public void setId(int id) {

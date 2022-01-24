@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.classes.AppUser;
 import org.example.classes.Person;
 import org.example.classes.ToDoItemDetail;
 
@@ -24,9 +25,11 @@ public class App
 
         System.out.println(nisse.getDescription());
         System.out.println(bengt.getDescription());
-        ToDoItemDetail aToDoFirst = new ToDoItemDetail(1,"Vattna palmerna", LocalDate.of(2022, 1, 22));
+        ToDoItemDetail aToDoFirst = new ToDoItemDetail(1,"Vattna palmerna", LocalDate.of(2022, 5, 22));
 
         //        ToDoItem aToDoFirst = new ToDoItem(1,"Vattna palmerna", null);
+        AppUser user = new AppUser("Greg", "1234", AppUser.AppRole.ROLE_APP_USER);
+        System.out.println(user);
 
     }
 
